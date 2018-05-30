@@ -6,7 +6,7 @@
 
 <b>Group Name:</b> Hidden Brackets 
 
-<b>Project Name:</b> Kinfolk 
+<b>Project Name:</b> KinFolk 
 
 <b>Team Members:</b>
 Rosita Cabrera<br>
