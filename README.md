@@ -8,7 +8,7 @@
 <b>Team Members:</b>
 Rosita Cabrera
 Teresa Jackson 
-Courtney Williams
+Courtney Olivia (Front-end / Logo design)
 Curtis Gordon
 Charronda King
 
@@ -23,14 +23,6 @@ Expo Client used to Build both iOS and Android app and to review, test, and depl
 Chat box integration<br>
 Redux<br>
 Material<br>
-
-
-<b>Group Member Roles:</b><br> 
-Rosita Cabrera: Front-End and Back-End React Native App / Expo<br>
-Teresa Jackson: Backend React Native App / Expo<br>
-Curtis Gordon: Backend React Native App<br>
-Courtney Williams: Frontend<br>
-Charronda King: Powerpoint <br>
 
 
 <b>To view this project use the EXPO client...</b><br>
