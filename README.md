@@ -1,6 +1,6 @@
 # KinFolk
 
-<b>Expo Link:</b> https://expo.io/@rodesigned/hiddenbrackets<br>
+<b>Expo Link to View App:</b> https://expo.io/@rodesigned/hiddenbrackets<br>
 
 <b>Team Project 3</b>
 
