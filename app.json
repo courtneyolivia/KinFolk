@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "hiddenbrackets",
+    "description": "Kin Folk.",
+    "slug": "hiddenbrackets",
+    "privacy": "public",
+    "sdkVersion": "27.0.0",
+    "platforms": ["ios", "android"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+     "icon": "./app.png",
+    "splash": {
+      "image": "./splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#50D2C2"
+    },
+    "androidStatusBarColor": "#50D2C2",
+    "androidStatusBar": {
+        "barStyle": "light-content",
+        "backgroundColor": "#50D2C2"
+    },     
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+      
+    }
+  }
+}

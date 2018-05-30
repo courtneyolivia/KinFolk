@@ -1,0 +1,48 @@
+path /users/{uid} is User {
+    read() { isAuthenticated() }
+    write() { isCurrentUser(uid) }
+}
+
+type Lists extends List[] {}
+type Tasks extends Task[] {}
+type ListItems extends ListItem[] {}
+type Participants extends Participant[] {}
+
+type User {
+    profile: Profile,
+    lists: Lists,
+    tasks: Tasks
+}
+
+type Profile {
+    name: String,
+    birthday: Number,
+    emailNotifications: Boolean,
+    phoneNotifications: Boolean
+}
+
+type List {
+    name: String,
+    description: String,
+    items: ListItems
+}
+
+type ListItem {
+  title: String,
+  done: Boolean
+}
+
+type Task {
+    title: String,
+    time: Number,
+    project: String,
+    participants: Participants,
+    done: Boolean
+}
+
+type Participant {
+  uid: String
+}
+
+isAuthenticated() { auth != null }
+isCurrentUser(uid) { auth != null && auth.uid == uid }

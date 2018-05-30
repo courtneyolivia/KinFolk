@@ -1,0 +1,95 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".validate": "newData.hasChildren(['profile'])",
+        "profile": {
+          ".validate": "newData.hasChildren(['name', 'birthday', 'emailNotifications', 'phoneNotifications'])",
+          "name": {
+            ".validate": "newData.isString()"
+          },
+          "birthday": {
+            ".validate": "newData.isNumber()"
+          },
+          "emailNotifications": {
+            ".validate": "newData.isBoolean()"
+          },
+          "phoneNotifications": {
+            ".validate": "newData.isBoolean()"
+          },
+          "$other": {
+            ".validate": "false"
+          }
+        },
+        "lists": {
+          "$key1": {
+            ".validate": "newData.hasChildren(['name', 'description'])",
+            "name": {
+              ".validate": "newData.isString()"
+            },
+            "description": {
+              ".validate": "newData.isString()"
+            },
+            "items": {
+              "$key2": {
+                ".validate": "newData.hasChildren(['title', 'done'])",
+                "title": {
+                  ".validate": "newData.isString()"
+                },
+                "done": {
+                  ".validate": "newData.isBoolean()"
+                },
+                "$other": {
+                  ".validate": "false"
+                }
+              },
+              ".validate": "newData.hasChildren()"
+            },
+            "$other": {
+              ".validate": "false"
+            }
+          },
+          ".validate": "newData.hasChildren()"
+        },
+        "tasks": {
+          "$key3": {
+            ".validate": "newData.hasChildren(['title', 'time', 'project', 'done'])",
+            "title": {
+              ".validate": "newData.isString()"
+            },
+            "time": {
+              ".validate": "newData.isNumber()"
+            },
+            "project": {
+              ".validate": "newData.isString()"
+            },
+            "participants": {
+              "$key4": {
+                ".validate": "newData.hasChildren(['uid'])",
+                "uid": {
+                  ".validate": "newData.isString()"
+                },
+                "$other": {
+                  ".validate": "false"
+                }
+              },
+              ".validate": "newData.hasChildren()"
+            },
+            "done": {
+              ".validate": "newData.isBoolean()"
+            },
+            "$other": {
+              ".validate": "false"
+            }
+          },
+          ".validate": "newData.hasChildren()"
+        },
+        "$other": {
+          ".validate": "false"
+        },
+        ".read": "auth != null",
+        ".write": "auth != null && auth.uid == $uid"
+      }
+    }
+  }
+}
