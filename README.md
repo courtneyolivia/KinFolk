@@ -1,4 +1,7 @@
 # KinFolk
+
+<b>Expo Link:</b> https://expo.io/@rodesigned/hiddenbrackets<br>
+
 <b>Team Project 3</b>
 
 <b>Group Name:</b> Hidden Brackets 
